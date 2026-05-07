@@ -1,0 +1,10 @@
+project_id = "ffzzxvqgaxcrbsdyiych"
+
+[functions.bulk-invite-users]
+verify_jwt = false
+
+[functions.ai-advisor]
+verify_jwt = false
+
+[functions.task-reminders]
+verify_jwt = false

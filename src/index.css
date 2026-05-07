@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Executive Premium Design System
+   Modern, elegant, and sophisticated for C-level executives
+   All colors in HSL format
+*/
+
+@layer base {
+  :root {
+    /* Light Theme - Clean, Professional, Sophisticated */
+    --background: 220 20% 97%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary - Deep Navy Blue */
+    --primary: 222 47% 20%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Secondary - Warm Gray */
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Accent - Subtle Blue-Gray */
+    --accent: 220 14% 93%;
+    --accent-foreground: 222 47% 11%;
+
+    /* Status Colors */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    /* Borders & Inputs */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 222 47% 20%;
+
+    --radius: 0.625rem;
+
+    /* Chart Colors */
+    --chart-1: 222 47% 20%;
+    --chart-2: 199 89% 48%;
+    --chart-3: 142 71% 45%;
+    --chart-4: 38 92% 50%;
+    --chart-5: 0 72% 51%;
+
+    /* Sidebar - Light Elegant */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 222 47% 20%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 222 47% 20%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(222 47% 20%) 0%, hsl(222 47% 30%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(142 71% 45%) 0%, hsl(142 71% 35%) 100%);
+    --gradient-warning: linear-gradient(135deg, hsl(38 92% 50%) 0%, hsl(38 92% 40%) 100%);
+    --gradient-danger: linear-gradient(135deg, hsl(0 72% 51%) 0%, hsl(0 72% 41%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(222 47% 11% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(222 47% 11% / 0.08), 0 2px 4px -2px hsl(222 47% 11% / 0.05);
+    --shadow-lg: 0 10px 15px -3px hsl(222 47% 11% / 0.08), 0 4px 6px -4px hsl(222 47% 11% / 0.05);
+    --shadow-xl: 0 20px 25px -5px hsl(222 47% 11% / 0.1), 0 8px 10px -6px hsl(222 47% 11% / 0.05);
+  }
+
+  .gray {
+    /* Gray Theme - Neutral, Calm, Mid-tone */
+    --background: 220 10% 88%;
+    --foreground: 222 20% 15%;
+
+    --card: 220 10% 93%;
+    --card-foreground: 222 20% 15%;
+
+    --popover: 220 10% 93%;
+    --popover-foreground: 222 20% 15%;
+
+    /* Primary - Medium Slate */
+    --primary: 222 20% 30%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Softer Gray */
+    --secondary: 220 10% 82%;
+    --secondary-foreground: 222 20% 15%;
+
+    --muted: 220 10% 82%;
+    --muted-foreground: 220 8% 42%;
+
+    --accent: 220 10% 80%;
+    --accent-foreground: 222 20% 15%;
+
+    --destructive: 0 65% 48%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 60% 38%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 85% 45%;
+    --warning-foreground: 0 0% 100%;
+
+    --info: 199 80% 42%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 220 10% 78%;
+    --input: 220 10% 78%;
+    --ring: 222 20% 30%;
+
+    --chart-1: 222 20% 30%;
+    --chart-2: 199 80% 42%;
+    --chart-3: 142 60% 38%;
+    --chart-4: 38 85% 45%;
+    --chart-5: 0 65% 48%;
+
+    --sidebar-background: 220 10% 85%;
+    --sidebar-foreground: 222 20% 15%;
+    --sidebar-primary: 222 20% 30%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 10% 80%;
+    --sidebar-accent-foreground: 222 20% 15%;
+    --sidebar-border: 220 10% 75%;
+    --sidebar-ring: 222 20% 30%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(222 20% 30%) 0%, hsl(222 20% 40%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(142 60% 38%) 0%, hsl(142 60% 30%) 100%);
+    --gradient-warning: linear-gradient(135deg, hsl(38 85% 45%) 0%, hsl(38 85% 35%) 100%);
+    --gradient-danger: linear-gradient(135deg, hsl(0 65% 48%) 0%, hsl(0 65% 38%) 100%);
+
+    --shadow-sm: 0 1px 2px 0 hsl(220 10% 50% / 0.15);
+    --shadow-md: 0 4px 6px -1px hsl(220 10% 50% / 0.2), 0 2px 4px -2px hsl(220 10% 50% / 0.12);
+    --shadow-lg: 0 10px 15px -3px hsl(220 10% 50% / 0.2), 0 4px 6px -4px hsl(220 10% 50% / 0.12);
+    --shadow-xl: 0 20px 25px -5px hsl(220 10% 50% / 0.25), 0 8px 10px -6px hsl(220 10% 50% / 0.15);
+  }
+
+  .dark {
+    /* Dark Theme - Sophisticated, Deep, Premium */
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --card: 224 71% 7%;
+    --card-foreground: 213 31% 91%;
+
+    --popover: 224 71% 7%;
+    --popover-foreground: 213 31% 91%;
+
+    /* Primary - Elegant Light Blue */
+    --primary: 210 40% 80%;
+    --primary-foreground: 222 47% 11%;
+
+    /* Secondary - Deep Blue-Gray */
+    --secondary: 222 47% 15%;
+    --secondary-foreground: 213 31% 91%;
+
+    --muted: 223 47% 13%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Accent - Subtle Highlight */
+    --accent: 222 47% 15%;
+    --accent-foreground: 213 31% 91%;
+
+    /* Status Colors - Slightly muted for dark mode */
+    --destructive: 0 63% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 71% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 45%;
+    --warning-foreground: 0 0% 100%;
+
+    --info: 199 89% 45%;
+    --info-foreground: 0 0% 100%;
+
+    /* Borders & Inputs */
+    --border: 223 47% 16%;
+    --input: 223 47% 16%;
+    --ring: 210 40% 80%;
+
+    /* Chart Colors */
+    --chart-1: 210 40% 80%;
+    --chart-2: 199 89% 55%;
+    --chart-3: 142 71% 50%;
+    --chart-4: 38 92% 55%;
+    --chart-5: 0 63% 55%;
+
+    /* Sidebar - Dark Elegant */
+    --sidebar-background: 224 71% 6%;
+    --sidebar-foreground: 213 31% 91%;
+    --sidebar-primary: 210 40% 80%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 222 47% 12%;
+    --sidebar-accent-foreground: 213 31% 91%;
+    --sidebar-border: 223 47% 14%;
+    --sidebar-ring: 210 40% 80%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 40% 80%) 0%, hsl(210 40% 70%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(142 71% 40%) 0%, hsl(142 71% 30%) 100%);
+    --gradient-warning: linear-gradient(135deg, hsl(38 92% 45%) 0%, hsl(38 92% 35%) 100%);
+    --gradient-danger: linear-gradient(135deg, hsl(0 63% 45%) 0%, hsl(0 63% 35%) 100%);
+
+    /* Shadows - Darker for depth */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.4), 0 2px 4px -2px hsl(0 0% 0% / 0.2);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.4), 0 4px 6px -4px hsl(0 0% 0% / 0.2);
+    --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.5), 0 8px 10px -6px hsl(0 0% 0% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'Noto Sans KR', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Typography refinements */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+
+  /* Smooth transitions for theme changes */
+  * {
+    @apply transition-colors duration-150;
+  }
+}
+
+@layer utilities {
+  /* Executive Card Styles */
+  .card-elevated {
+    box-shadow: var(--shadow-md);
+    @apply border border-border/50 bg-card;
+  }
+
+  .card-elevated:hover {
+    box-shadow: var(--shadow-lg);
+  }
+
+  /* Status indicator utilities */
+  .status-success {
+    @apply bg-success text-success-foreground;
+  }
+
+  .status-warning {
+    @apply bg-warning text-warning-foreground;
+  }
+
+  .status-danger {
+    @apply bg-destructive text-destructive-foreground;
+  }
+
+  /* Gradient text */
+  .text-gradient-primary {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glass morphism effect */
+  .glass {
+    @apply bg-background/80 backdrop-blur-xl;
+  }
+
+  /* Focus ring for accessibility */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-border rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/30;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-border;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/50;
+}

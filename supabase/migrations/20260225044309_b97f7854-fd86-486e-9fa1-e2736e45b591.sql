@@ -1,0 +1,1 @@
+ALTER TABLE public.kpis ADD COLUMN weight numeric NOT NULL DEFAULT 100;
