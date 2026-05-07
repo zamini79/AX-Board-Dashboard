@@ -36,6 +36,7 @@ export interface Profile {
   title: string | null;
   department: string | null;
   department_id: string | null;
+  is_approved: boolean | null;
   created_at: string;
   updated_at: string;
 }
